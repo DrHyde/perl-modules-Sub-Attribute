@@ -1,0 +1,7 @@
+Revision history for Perl extension Sub::Attribute
+
+0.02 Mon May 18 14:05:32 2009
+	- change internal attribute names
+
+0.01 Thu Apr 23 23:00:00 2009
+        - original version; created by Module::Setup
