@@ -11,3 +11,4 @@ Makefile*
 META.yml
 inc/
 MANIFEST
+ppport.h
