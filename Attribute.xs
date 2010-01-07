@@ -36,7 +36,7 @@ apply_handler(pTHX_ pMY_CXT_ AV* const handler){
 
 	if(!CvGV(cv)){ /* dying by bad attributes */
 		if(ckWARN(WARN_MISC)){
-			Perl_warner(aTHX_ packWARN(WARN_MISC), "Attribute %"SVf" ignored for some reason", name);
+			Perl_warner(aTHX_ packWARN(WARN_MISC), "Attribute %"SVf" ignored because: %"SVf, name, ERRSV);
 		}
 		return;
 	}
