@@ -40,8 +40,8 @@
 \bauthor\b
 
 # skip object files
-Attributes\.c$
-\.o(?:bj)$
+Attribute\.c$
+\.o(?:bj)?$
 \.bs$
 
 ^ppport\.h$
