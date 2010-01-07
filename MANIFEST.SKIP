@@ -43,3 +43,5 @@
 Attributes\.c$
 \.o(?:bj)$
 \.bs$
+
+^ppport\.h$
