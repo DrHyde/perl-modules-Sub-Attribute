@@ -65,7 +65,7 @@ in run-time C<eval()>, so C<ATTR(CODE)> is not reliable.
 
 =head2 The B<ATTR_SUB> meta attribute
 
-Defines a method as an subrouitne attribute handler.
+Defines a method as an subroutine attribute handler.
 
 =head1 CONFIGURATION AND ENVIRONMENT
 
