@@ -209,6 +209,22 @@ PPCODE:
 			av_push(MY_CXT.queue, (SV*)handler);
 		}
 		else{
+			if(MY_CXT.debug){
+				warn("ignore unrecognized attribute :%"SVf"\n", ST(i));
+			}
+#if PERL_BCDVERSION < 0x5008009
+			/* See RT #53420 */
+			{
+				const char* const a = SvPV_nolen_const(ST(i));
+				if(    strEQ(a, "lvalue")
+					|| strEQ(a, "method")
+					|| strEQ(a, "locked")
+					|| strEQ(a, "unique")
+					|| strEQ(a, "shared") ){
+					continue;
+			    }
+			}
+#endif
 			XPUSHs(ST(i));
 		}
 	}
