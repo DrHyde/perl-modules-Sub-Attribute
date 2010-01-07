@@ -2,12 +2,12 @@ use strict;
 use warnings;
 use inc::Module::Install;
 
-name 'Sub-Attribute';
 all_from 'lib/Sub/Attribute.pm';
 
-requires 'Exporter'        => 5.57;
+use_ppport 3.19;
+cc_warnings;
 
-build_requires 'ExtUtils::ParseXS';
+requires 'Exporter'        => 5.57;
 
 test_requires 'Test::More'  => 0.62;
 test_requires 'parent'      => 0.221;
@@ -18,13 +18,13 @@ no_index directory => 'example';
 tests 't/*.t';
 author_tests 'xt';
 
-WriteMakefile(
-	OBJECT => '$(O_FILES)',
+auto_set_repository;
 
-	clean  => {FILES => q(
-		Sub-Attribute-* *.stackdump
-		*.gcda *.gcno *.gcov
-		nytprof *.out
-		cover_db
-	)},
+clean_files q(
+	Sub-Attribute-* *.stackdump
+	*.gcda *.gcno *.gcov
+	nytprof *.out
+	cover_db
 );
+
+WriteAll check_nmake => 0;
