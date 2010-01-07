@@ -35,9 +35,7 @@ apply_handler(pTHX_ pMY_CXT_ AV* const handler){
 	dSP;
 
 	if(!CvGV(cv)){ /* dying by bad attributes */
-		if(ckWARN(WARN_MISC)){
-			Perl_warner(aTHX_ packWARN(WARN_MISC), "Attribute %"SVf" ignored because: %"SVf, name, ERRSV);
-		}
+		Perl_qerror(aTHX_ ERRSV);
 		return;
 	}
 
@@ -71,10 +69,9 @@ apply_handler(pTHX_ pMY_CXT_ AV* const handler){
 	PL_stack_sp -= call_sv(method, G_VOID | G_EVAL);
 
 	if(SvTRUEx(ERRSV)){
-		if(ckWARN(WARN_MISC)){
-			Perl_warner(aTHX_ packWARN(WARN_MISC),
-			"Can't apply attribute %"SVf" because: %"SVf, name, ERRSV);
-		}
+		SV* const msg = sv_newmortal();
+		sv_setpvf(msg, "Can't apply attribute %"SVf" because: %"SVf, name, ERRSV);
+		Perl_qerror(aTHX_ msg);
 	}
 }
 
