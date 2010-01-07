@@ -16,3 +16,4 @@ __DATA__
 Goro Fuji (gfx)
 gfuji(at)cpan.org
 Sub::Attribute
+gfx
