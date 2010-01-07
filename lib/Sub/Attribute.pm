@@ -24,9 +24,7 @@ Sub::Attribute - Reliable subroutine attribute handlers
 
 This document describes Sub::Attribute version 0.02.
 
-=for test_synopsis
-
-	BEGIN{ $INC{'Attribute/Foo.pm'} = __FILE__ }
+=for test_synopsis BEGIN{ $INC{'Attribute/Foo.pm'} = __FILE__ }
 
 =head1 SYNOPSIS
 
@@ -97,7 +95,7 @@ Goro Fuji (gfx) E<lt>gfuji(at)cpan.orgE<gt>.
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (c) 2009, Goro Fuji (gfx). Some rights reserved.
+Copyright (c) 2009-20010, Goro Fuji (gfx). Some rights reserved.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
