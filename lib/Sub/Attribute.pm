@@ -8,7 +8,7 @@ our $VERSION = '0.02';
 use XSLoader;
 XSLoader::load(__PACKAGE__, $VERSION);
 
-use Exporter qw(import);
+use parent qw(Exporter);
 our @EXPORT = qw(ATTR_SUB MODIFY_CODE_ATTRIBUTES);
 
 use attributes ();
