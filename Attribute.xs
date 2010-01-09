@@ -6,6 +6,25 @@
 #include "ppport.h"
 #include "mgx.h"
 
+#if defined(WIN32) /* ActivePerl */
+static void
+Perl_qerror(pTHX_ SV *err)
+{
+    dVAR;
+
+    PERL_ARGS_ASSERT_QERROR;
+
+    if (PL_in_eval)
+	sv_catsv(ERRSV, err);
+    else if (PL_errors)
+	sv_catsv(PL_errors, err);
+    else
+	Perl_warn(aTHX_ "%"SVf, SVfARG(err));
+    if (PL_parser)
+	++PL_parser->error_count;
+}
+#endif
+
 #define PACKAGE "Sub::Attribute"
 #define META_ATTR "ATTR_SUB"
 
