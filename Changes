@@ -1,5 +1,8 @@
 Revision history for Perl extension Sub::Attribute
 
+0.04 Sat Jan  9 16:25:43 2010
+    - Fix an issue on ActivePerl (RT #53530, thanks to Taro Nishino)
+
 0.03 Thu Jan  7 17:32:53 2010
     - Fix the error resolution
         Now Sub::Attribute throws fatal error currecly and safely

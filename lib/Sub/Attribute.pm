@@ -3,7 +3,7 @@ package Sub::Attribute;
 use 5.008_001;
 use strict;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 use XSLoader;
 XSLoader::load(__PACKAGE__, $VERSION);
@@ -22,7 +22,7 @@ Sub::Attribute - Reliable subroutine attribute handlers
 
 =head1 VERSION
 
-This document describes Sub::Attribute version 0.03.
+This document describes Sub::Attribute version 0.04.
 
 =for test_synopsis BEGIN{ $INC{'Attribute/Foo.pm'} = __FILE__ }
 
