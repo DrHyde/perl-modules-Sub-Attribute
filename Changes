@@ -1,5 +1,9 @@
 Revision history for Perl extension Sub::Attribute
 
+0.05 Tue Jan 19 11:10:46 2010
+    - Work around RT #53776 (Thanks to Andreas Koenig)
+    - Work around RT #53793 (Thanks to Markus Peter)
+
 0.04 Sat Jan  9 16:25:43 2010
     - Fix an issue on ActivePerl (RT #53530, thanks to Taro Nishino)
 
