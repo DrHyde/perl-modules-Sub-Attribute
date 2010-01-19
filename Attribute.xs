@@ -51,11 +51,12 @@ apply_handler(pTHX_ pMY_CXT_ AV* const handler){
     SV* const method       = AvARRAY(handler)[SA_METHOD];
     dSP;
 
-    if(!CvGV(cv)){ /* dying by bad attributes */
+    if(sv_true(ERRSV)){ /* dying by bad attributes */
         qerror(ERRSV);
         return;
     }
 
+    assert(CvGV(cv));
     assert(SvTYPE(method) == SVt_PVCV);
 
     if(MY_CXT.debug){
@@ -85,7 +86,7 @@ apply_handler(pTHX_ pMY_CXT_ AV* const handler){
 
     PL_stack_sp -= call_sv(method, G_VOID | G_EVAL);
 
-    if(SvTRUEx(ERRSV)){
+    if(sv_true(ERRSV)){
         SV* const msg = sv_newmortal();
         sv_setpvf(msg, "Can't apply attribute %"SVf" because: %"SVf, name, ERRSV);
         qerror(msg);
