@@ -17,9 +17,10 @@ cc_warnings;
 
 requires 'parent', 0.2;
 
-test_requires 'Test::More'  => 0.88;
-test_requires 'parent'      => 0.221;
-test_requires 'MRO::Compat' => 0.09;
+test_requires 'Test::More'     => 0.88;
+test_requires 'parent'         => 0.221;
+test_requires 'MRO::Compat'    => 0.09;
+test_requires 'Class::Trigger' => 0.14;
 
 no_index directory => 'example';
 
