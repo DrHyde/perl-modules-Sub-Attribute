@@ -1,6 +1,6 @@
 Revision history for Perl extension Sub::Attribute
 
-0.06
+0.05_01
     - Fix panic caused by PL_stack_sp moving during call_sv() (since perl
       v5.19.x) [RT #107588]
 
