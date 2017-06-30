@@ -7,6 +7,9 @@
 #
 # taken from https://rt.perl.org/Ticket/Display.html?id=126145
 
+# See also https://github.com/test-class-moose/test-class-moose/issues/78
+
+
 package Foo;
 
 use Test::More;
