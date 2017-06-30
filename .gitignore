@@ -8,7 +8,9 @@
 Makefile*
 !Makefile.PL
 *blib
-META.yml
+META.*
 inc/
 MANIFEST
 ppport.h
+Attribute.c
+MYMETA.*
