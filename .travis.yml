@@ -15,5 +15,6 @@ matrix:
     - perl: 5.20
       env: COVERAGE=1
 before_install:
+  - cpanm --quiet Test::More parent MRO::Compat Class::Trigger
   - eval $(curl https://travis-perl.github.io/init) --auto
 sudo: false
