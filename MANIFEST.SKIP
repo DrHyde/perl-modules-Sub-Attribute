@@ -10,6 +10,8 @@
 
 # Avoid Makemaker generated and utility files.
 \bMANIFEST\.bak
+\bMYMETA\.yml$
+\bMYMETA\.json$
 \bMakefile$
 \bblib/
 \bMakeMaker-\d
