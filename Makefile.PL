@@ -1,10 +1,11 @@
 use strict;
 use warnings;
 
+# NAME => 'Sub::Attribute', # placate DC's release tool which expect EU::MM-stylee
+
 # for authors, you need to also install:
 #  Module::Install::XSUtil
 #  Module::Install::AuthorTests
-#  Module::Install::Repository
 #
 # the necessary bits will be bundled for ordinary users
 
@@ -28,13 +29,15 @@ no_index directory => 'example';
 tests 't/*.t';
 author_tests 'xt';
 
-auto_set_repository;
+resources
+    repository => 'https://github.com/DrHyde/perl-modules-Sub-Attribute',
+    bugtracker => 'https://github.com/DrHyde/perl-modules-Sub-Attribute/issues';
 
 clean_files q(
 	Sub-Attribute-* *.stackdump
 	*.gcda *.gcno *.gcov
 	nytprof *.out
-	cover_db
+	cover_db *META*
 );
 
 WriteAll check_nmake => 0;
