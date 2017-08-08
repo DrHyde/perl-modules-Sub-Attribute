@@ -8,6 +8,7 @@ use warnings;
 #
 # the necessary bits will be bundled for ordinary users
 
+use lib '.';
 use inc::Module::Install;
 
 all_from 'lib/Sub/Attribute.pm';
