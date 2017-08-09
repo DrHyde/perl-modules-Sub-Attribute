@@ -16,4 +16,5 @@ WriteMakefile(
     'MRO::Compat'    => '0.09',
     'Class::Trigger' => '0.14',
   },
+  CCFLAGS => '-I.',
 );
