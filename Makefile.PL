@@ -1,4 +1,5 @@
 use ExtUtils::MakeMaker;
+use Config;
 
 WriteMakefile(
   NAME         => 'Sub::Attribute',
@@ -16,5 +17,5 @@ WriteMakefile(
     'MRO::Compat'    => '0.09',
     'Class::Trigger' => '0.14',
   },
-  CCFLAGS => '-I.',
+  CCFLAGS => join(' ', ($Config::Config{ccflags} || ''), '-I.'),
 );
