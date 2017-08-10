@@ -1,8 +1,6 @@
 use ExtUtils::MakeMaker;
 use Config;
 
-warn(`ls`);
-warn(`pwd`);
 WriteMakefile(
   NAME         => 'Sub::Attribute',
     META_MERGE => {
