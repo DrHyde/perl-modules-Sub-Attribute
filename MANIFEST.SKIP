@@ -45,5 +45,3 @@
 Attribute\.c$
 \.o(?:bj)?$
 \.bs$
-
-^ppport\.h$
