@@ -10,8 +10,5 @@ Makefile*
 !Makefile.PL
 *blib
 META.*
-inc/
-MANIFEST
-ppport.h
 Attribute.c
 MYMETA.*
