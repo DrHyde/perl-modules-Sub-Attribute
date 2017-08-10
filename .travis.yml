@@ -1,4 +1,5 @@
 language: perl
+env: TRAVIS_PERL_DEBUG=1
 perl:
   - "5.8"
   - "5.10"
