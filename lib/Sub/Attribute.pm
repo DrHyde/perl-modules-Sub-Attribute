@@ -3,7 +3,7 @@ package Sub::Attribute;
 use 5.008_001;
 use strict;
 
-our $VERSION = '0.07';
+our $VERSION = '0.07_01';
 
 use XSLoader;
 XSLoader::load(__PACKAGE__, $VERSION);

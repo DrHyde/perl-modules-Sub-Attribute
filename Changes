@@ -1,5 +1,8 @@
 Revision history for Perl extension Sub::Attribute
 
+XXXX
+    - Switch to using ExtUtils::MakeMaker for build
+
 0.07 Tue Aug 8 23:45:00 2017
     - Make Makefile.PL work on perl 5.26
 
