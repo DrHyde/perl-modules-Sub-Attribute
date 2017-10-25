@@ -4,7 +4,7 @@ use Config;
 WriteMakefile(
   NAME         => 'Sub::Attribute',
     META_MERGE => {
-        # license => 'other',
+        # license => 'open_source',
         resources => {
             repository => 'https://github.com/DrHyde/perl-modules-Sub-Attribute',
             bugtracker => 'https://github.com/DrHyde/perl-modules-Sub-Attribute//issues'
