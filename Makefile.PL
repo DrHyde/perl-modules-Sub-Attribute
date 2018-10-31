@@ -19,3 +19,11 @@ WriteMakefile(
   },
   CCFLAGS => join(' ', ($Config::Config{ccflags} || ''), '-I.'),
 );
+
+package MY;
+sub depend {
+  "
+xtest :: test
+\t\$(MAKE) test TEST_FILES=xt/*.t
+"
+}

@@ -24,7 +24,7 @@ t/apply.t
 t/workaround58.t
 t/example_1.t
 t/survive_stack_moves_on_5.20.t
-t/podspell.t
+xt/podspell.t
 t/pod.t
 t/pod-coverage.t
 t/synopsis.t
