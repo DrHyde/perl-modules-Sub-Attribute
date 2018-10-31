@@ -1,9 +1,8 @@
 Revision history for Perl extension Sub::Attribute
 
-0.07
-    - Identical to 0.06_01, plus ...
-    - Don't run podspell.t by default as OpenBSD has the word "software"
-      missing from its dictionary as so gives bogus test failures
+2018-10-31    0.07  Identical to 0.06_01, plus ...
+                    Don't run podspell.t by default as OpenBSD has the word "software"
+                      missing from its dictionary as so gives bogus test failures
 
 0.06_01
     - Make Makefile.PL work on perl 5.26

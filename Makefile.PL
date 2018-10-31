@@ -7,7 +7,7 @@ WriteMakefile(
         # license => 'open_source',
         resources => {
             repository => 'https://github.com/DrHyde/perl-modules-Sub-Attribute',
-            bugtracker => 'https://github.com/DrHyde/perl-modules-Sub-Attribute//issues'
+            bugtracker => 'https://github.com/DrHyde/perl-modules-Sub-Attribute/issues'
         }
     },
   VERSION_FROM => 'lib/Sub/Attribute.pm',
