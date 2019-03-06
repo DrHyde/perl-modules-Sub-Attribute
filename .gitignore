@@ -2,6 +2,7 @@
 !.gitignore
 !.shipit
 !.travis.yml
+!.cirrus.yml
 *.o
 *.obj
 *.bs
