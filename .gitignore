@@ -1,6 +1,7 @@
 .*
 !.gitignore
 !.shipit
+!.appveyor.yml
 !.travis.yml
 !.cirrus.yml
 *.o
