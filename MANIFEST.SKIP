@@ -45,4 +45,4 @@
 Attribute\.c$
 \.o(?:bj)?$
 \.bs$
-^../XML-Tiny/workflow-templates
+^workflow-templates
