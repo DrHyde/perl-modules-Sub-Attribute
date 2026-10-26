@@ -3,8 +3,10 @@ use Config;
 
 WriteMakefile(
   NAME         => 'Sub::Attribute',
-    META_MERGE => {
+    META_ADD => {
         # license => 'open_source',
+},
+META_MERGE => {
         resources => {
             repository => 'https://github.com/DrHyde/perl-modules-Sub-Attribute',
             bugtracker => 'https://github.com/DrHyde/perl-modules-Sub-Attribute/issues'
